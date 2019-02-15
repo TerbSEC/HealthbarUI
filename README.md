@@ -4,9 +4,9 @@
 ------------------------------------------------------------------------
   
 **Installation**
-  Download the resource from the link above
-  Drag the vRP_Healthbar-UI resource into your Resources folder
-  Add start Radargun into Server.cfg
+  Download the resource from the buttom above
+  Drag the resource into your Resources folder
+  Add start “resource name” in your Server.cfg
   Now you are good to go <3
 
 ------------------------------------------------------------------------
