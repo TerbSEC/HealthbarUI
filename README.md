@@ -71,6 +71,8 @@ AddEventHandler('esx_status:load', function(status)
 	end)
 end)
 ```
+Now just start the HealthbarUI in the Server.cfg
+Done;D Easy Right? :P
 
 ------------------------------------------------------------------------
 
