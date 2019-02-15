@@ -3,14 +3,16 @@
 
 ------------------------------------------------------------------------
 
-**How to????**
-- Drag and Drop
-- Start the Script in Server.cfg
+**Installation**
+  Download the resource from the link above
+  Drag the vRP_Healthbar-UI resource into your Resources folder
+  Add start Radargun into Server.cfg
+  Now you are good to go <3
 
 ------------------------------------------------------------------------
 
 **FiveM**
-- > 
+- > https://forum.fivem.net/t/release-vrp-healthbar-ui/265693
 
 ------------------------------------------------------------------------
 
