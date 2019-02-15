@@ -8,7 +8,8 @@ HealthBar UI - vRP
 **FiveM**
 - > 
 
-*Full Credits to*
-- **#Molnlyck for the Original Script (https://github.com/Molnlyck/FiveM_Scripts )**
+**Credits**
+- **#Molnlyck for the Original Script / And Allowing me to upload this (https://github.com/Molnlyck/FiveM_Scripts )**
 
-
+**Screenshot**
+- https://gyazo.com/d2af115e05ff52a5def8dde17767333a
