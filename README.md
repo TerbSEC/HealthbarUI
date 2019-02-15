@@ -1,5 +1,5 @@
-# vRP_Healthbar-UI
-**HealthBar UI - vRP**
+# Healthbar-UI
+**HealthBar UI - vRP and ESX**
 
 ------------------------------------------------------------------------
 
