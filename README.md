@@ -12,8 +12,8 @@
 ------------------------------------------------------------------------
 
 **ESX SETUP**
-  - Please go into esx_status/client/main.lua
   - Requirements - ESX Framework and ESX_Status
+  - Please go into esx_status/client/main.lua
   ```lua
 RegisterNetEvent('esx_status:load')
 AddEventHandler('esx_status:load', function(status)
@@ -78,7 +78,7 @@ Done;D Easy Right? :P
 
 **VRP SETUP**
   - Requirement - VRP Framework
-  Plug and Play xd
+  - Plug and Play xd
   
 ------------------------------------------------------------------------
 
