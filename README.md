@@ -2,8 +2,16 @@
 **HealthBar UI - vRP and ESX**
 
 ------------------------------------------------------------------------
+  
+**Installation**
+  Download the resource from the link above
+  Drag the vRP_Healthbar-UI resource into your Resources folder
+  Add start Radargun into Server.cfg
+  Now you are good to go <3
 
-**ESX**
+------------------------------------------------------------------------
+
+**ESX SETUP**
   Please go into esx_status/client/main.lua
   ```lua
 RegisterNetEvent('esx_status:load')
@@ -33,17 +41,39 @@ AddEventHandler('esx_status:load', function(status)
 	end)
 end)
 ```
+And Replace it with this
+  ```lua
+RegisterNetEvent('esx_status:load')
+AddEventHandler('esx_status:load', function(status)
+	for i=1, #Status, 1 do
+		for j=1, #status, 1 do
+			if Status[i].name == status[j].name then
+				Status[i].set(status[j].val)
+			end
+		end
+	end
 
-**vrp**
+	Citizen.CreateThread(function()
+		while true do
+			for i=1, #Status, 1 do
+				Status[i].onTick()
+			end
+
+			SendNUIMessage({
+				update = true,
+				status = GetStatusData()
+			})
+
+			TriggerEvent('ESX_HealthBAR-UI:updateStatus', GetStatusData(true))
+			Citizen.Wait(Config.TickTime)
+		end
+	end)
+end)
+```
+
+**VRP SETUP**
   Plug and Play xd
   
-  
-**Installation**
-  Download the resource from the link above
-  Drag the vRP_Healthbar-UI resource into your Resources folder
-  Add start Radargun into Server.cfg
-  Now you are good to go <3
-
 ------------------------------------------------------------------------
 
 **FiveM**
