@@ -83,7 +83,7 @@ Done;D Easy Right? :P
 ------------------------------------------------------------------------
 
 **FiveM**
-- > https://forum.fivem.net/t/release-vrp-healthbar-ui/265693
+- > https://forum.fivem.net/t/release-healthbar-ui-updated-v1-0-now-supports-vrp-and-esx/265693
 
 ------------------------------------------------------------------------
 
