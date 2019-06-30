@@ -1,6 +1,9 @@
 # Healthbar-UI
 **HealthBar UI - vRP and ESX**
 
+Screenshot of version 1.1: https://i.gyazo.com/251d99f001355e3db5f1da9399f3f5ab.png AND https://i.gyazo.com/b243fc6b59729578498624aac4d6215a.png :) The BLUE bar is Armor.
+Screenshot of version 1.0: https://i.gyazo.com/d2af115e05ff52a5def8dde17767333a.png
+
 ------------------------------------------------------------------------
   
 **Installation**
@@ -89,10 +92,5 @@ Done;D Easy Right? :P
 
 **Credits**
 - **#Molnlyck for the Original Script / And Allowing me to upload this (https://github.com/Molnlyck/FiveM_Scripts )**
-
-------------------------------------------------------------------------
-
-**Screenshot**
-- https://gyazo.com/d2af115e05ff52a5def8dde17767333a
 
 ------------------------------------------------------------------------
