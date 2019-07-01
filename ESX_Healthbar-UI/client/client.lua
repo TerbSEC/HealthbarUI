@@ -22,7 +22,6 @@ RegisterNetEvent('ESX_HealthBAR-UI:updateStatus')
 AddEventHandler('ESX_HealthBAR-UI:updateStatus', function(Status)
     status = Status
     SendNUIMessage({
-        action = "updateStatus",
         st = Status,
     })
 end)
