@@ -2,9 +2,9 @@ local status = nil
 Citizen.CreateThread(function()
     while true do
 
-        Citizen.Wait(100)
+        Citizen.Wait(250)
         local xPlayer = PlayerPedId()
-        
+       
         SendNUIMessage({
             show = IsPauseMenuActive(),
             health = GetEntityHealth(xPlayer)-100,
