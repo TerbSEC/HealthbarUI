@@ -9,6 +9,8 @@ Citizen.CreateThread(function()
             health = (GetEntityHealth(GetPlayerPed(-1))-100),
             stamina = 100-GetPlayerSprintStaminaRemaining(PlayerId()),
             st = status,
+            healthtext = cfg.healthtext,
+            armortext = cfg.armortext,
         })
     end
 end)
