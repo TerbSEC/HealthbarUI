@@ -3,10 +3,12 @@ Citizen.CreateThread(function()
     while true do
 
         Citizen.Wait(100)
+        local xPlayer = PlayerPedId()
         
         SendNUIMessage({
             show = IsPauseMenuActive(),
-            health = (GetEntityHealth(GetPlayerPed(-1))-100),
+            health = GetEntityHealth(xPlayer)-100,
+            armor = GetPedArmour(xPlayer),
             stamina = 100-GetPlayerSprintStaminaRemaining(PlayerId()),
             st = status,
             healthtext = cfg.healthtext,
@@ -14,6 +16,7 @@ Citizen.CreateThread(function()
         })
     end
 end)
+
 
 RegisterNetEvent('ESX_HealthBAR-UI:updateStatus')
 AddEventHandler('ESX_HealthBAR-UI:updateStatus', function(Status)
