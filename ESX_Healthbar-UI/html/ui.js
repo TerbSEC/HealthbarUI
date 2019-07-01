@@ -3,10 +3,8 @@ $(document).ready(function() {
         var data = event.data;
         $(".container").css("display",data.show? "none":"block");
         $("#boxStamina").css("width",data.stamina + "%");
-
-        if (event.data.action == "updateStatus") {
-            updateStatus(event.data.st);
-        }
+        $('#boxHunger').css('width', event.data.st[0].percent+'%')
+        $('#boxThirst').css('width', event.data.st[1].percent+'%')
 
         if (data.armor == 0) {
             $("#boxHeal").css("width",data.health + "%"); // SHOW NORMAL BAR
@@ -52,9 +50,3 @@ $(document).ready(function() {
         }
     })
 })
-
-
-function updateStatus(status){
-    $('#boxHunger').css('width', status[0].percent+'%')
-    $('#boxThirst').css('width', status[1].percent+'%')
-}
