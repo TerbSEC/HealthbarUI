@@ -5,7 +5,7 @@ $(document).ready(function() {
         $("#boxStamina").css("width", data.stamina + "%");
 
         if (event.data.action == "updateStatus") {
-            updateStatus(event.data.st);
+            updateStatus(event.data.hunger,event.data.thirst);
         }
 
         if (data.armor > 0 ) {
@@ -62,6 +62,6 @@ $(document).ready(function() {
 })
 
 function updateStatus(status){
-    $('#boxHunger').css('width', status[0].percent+'%')
-    $('#boxThirst').css('width', status[1].percent+'%')
+    $('#boxHunger').css('width', hunger+'%')
+    $('#boxThirst').css('width', thirst+'%')
 }

@@ -21,6 +21,7 @@ AddEventHandler('ESX_HealthBAR-UI:updateStatus', function(Status)
     status = Status
     SendNUIMessage({
         action = "updateStatus",
-        st = Status,
+        hunger = status[1].percent,
+        thirst = status[2].percent
     })
 end)
