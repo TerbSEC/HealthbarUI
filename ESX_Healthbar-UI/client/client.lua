@@ -8,7 +8,6 @@ Citizen.CreateThread(function()
             health = GetEntityHealth(GetPlayerPed(-1)) - 100,
             armor = GetPedArmour(GetPlayerPed(-1)),
             stamina = 100 - GetPlayerSprintStaminaRemaining(PlayerId()),
-            st = status,
             healthtext = cfg.healthtext,
             armortext = cfg.armortext,
             deadtext = cfg.deadtext
@@ -21,6 +20,7 @@ AddEventHandler('ESX_HealthBAR-UI:updateStatus', function(Status)
     status = Status
     SendNUIMessage({
         action = "updateStatus",
-        st = Status,
+        hunger = status[1].percent,
+        thirst = status[2].percent
     })
 end)
